@@ -1,18 +1,18 @@
 #include<stdio.h>
 void main()
 {
-    int M,W,N,K,T;
+    float M,W,N,K,T;
     printf("Enter the marks obtained by the student:");
-    scanf("%d",&M);
+    scanf("%f",&M);
     printf("\nEnter the number of classes attended by the student:");
-    scanf("%d",&N);
+    scanf("%f",&N);
     printf("\nEnter the total number of classes:");
-    scanf("%d",&K);
+    scanf("%f",&K);
     W=N/K;
     if(M<100&M>0&&N<=K)
     {
         T=M*W;
-        printf("Final Score =%d\n",T);
+        printf("Final Score =%f\n",T);
             if(T>=90)
             printf("Grade = EX");
             else if(T>=80&&T<=89)
